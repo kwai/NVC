@@ -13,14 +13,14 @@
 We propose **Bi-directional Reference Harmonization Video Compression (BRHVC)**, a novel NBVC method that addresses the challenge of unbalanced reference frame contributions in hierarchical coding with large frame spans. Experimental results indicate that our BRHVC outperforms previous state-of-the-art NVC methods, even surpassing the traditional coding, VTM-RA (under random access configuration), on the HEVC datasets. 
   
 # 🛠️ Prerequisites
-* Python 3.8 and conda, get [Conda](https://www.anaconda.com/)
+* Python 3.10 and conda, get [Conda](https://www.anaconda.com/)
 * CUDA if want to use GPU
 * Environment
     ```
-    conda create -n $YOUR_PY38_ENV_NAME python=3.8
-    conda activate $YOUR_PY38_ENV_NAME
+    conda create -n $YOUR_PY_ENV_NAME python=3.10
+    conda activate $YOUR_PY_ENV_NAME
 
-    conda install pytorch==1.11.0 torchvision==0.12.0 torchaudio==0.11.0 cudatoolkit=11.3 -c pytorch
+    conda install pytorch==2.0.0 torchvision==0.15.0 torchaudio==2.0.0 pytorch-cuda=11.8 -c pytorch -c nvidia
     pip install -r requirements.txt
     ```
 
@@ -55,7 +55,7 @@ sudo apt-get install cmake g++
 cd src
 mkdir build
 cd build
-conda activate $YOUR_PY38_ENV_NAME
+conda activate $YOUR_PY_ENV_NAME
 cmake ../cpp -DCMAKE_BUILD_TYPE=Release
 make -j
 ```

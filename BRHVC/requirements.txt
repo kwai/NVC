@@ -1,9 +1,9 @@
-numpy>=1.20.0
+numpy==1.26.3
 scipy
 matplotlib
-torch>=1.7.0
-pytorch-msssim==0.2.0
+torch>=2.0.0
 tensorboard
 tqdm
 bd-metric
 ptflops
+mkl==2024.0.0
